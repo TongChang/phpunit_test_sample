@@ -21,7 +21,7 @@ class target
         $argChunk = array_chunk($arg, 10);
         $ret = [];
         for ($chunkIdx = 0; $chunkIdx < count($argChunk); $chunkIdx++) {
-            $ret = array_merge($ret, $this->sub->doSomething($argChunk[$chunkIdx]));
+            $ret = array_merge($ret, $this->sub->doSomething($argChunk[$chunkIdx])["data"] ?? []);
         }
         return $ret;
     }

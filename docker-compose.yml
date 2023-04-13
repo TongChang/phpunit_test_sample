@@ -9,3 +9,6 @@ services:
       - type: bind
         source: ./
         target: /app
+      - type: bind
+        source: ./php/php.ini
+        target: /usr/local/etc/php/php.ini

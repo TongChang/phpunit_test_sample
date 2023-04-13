@@ -16,6 +16,6 @@ class sub
      */
     public function doSomething(array $arg): array
     {
-        return $arg;
+        return ["data" => $arg];
     }
 }
